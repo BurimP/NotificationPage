@@ -17,4 +17,131 @@ body {
   height: 100vh;
   width: 100%;
   background-color: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 60%;
+  /* height: 50rem; */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  border-radius: 15px;
+}
+
+.headline {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 1rem 0 1rem;
+  /* background-color: yellow; */
+}
+
+.headline-right-content {
+  display: flex;
+  /* justify-content: space-between; */
+  width: 30%;
+  text-align: center;
+}
+
+.headline-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: navy;
+  height: 2rem;
+  min-width: 2.5rem;
+  color: white;
+  border-radius: 5px;
+  margin-left: 1rem;
+}
+
+.mark-read {
+  opacity: 0.7;
+}
+
+.notify-wrapper {
+  height: 90%;
+  width: 90%;
+  /* background-color: rgb(215, 214, 214); */
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.notification {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  background-color: rgba(54, 193, 253, 0.2);
+  border-radius: 10px;
+  max-height: 4.5rem;
+  align-items: center;
+  justify-items: lefts;
+  /* gap: 1rem; */
+}
+
+.portrait {
+  height: 70%;
+  grid-row: 2 / span 2;
+  margin-left: 0.6rem;
+}
+
+.notify-right-content {
+  grid-column: 2 / 11;
+  grid-row: 2;
+  /* background-color: blueviolet; */
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+.chess-text {
+  font-weight: bold;
+  color: navy;
+}
+
+.red-circle {
+  background-color: red;
+  height: 0.4rem;
+  width: 0.4rem;
+  border-radius: 100%;
+  margin-top: 0.5rem;
+}
+
+.time {
+  grid-column: 2 / span 2;
+  grid-row: 3;
+  /* background-color: yellowgreen; */
+  /* margin-bottom: 0.9rem; */
+  transform: translateY(-0.5rem);
+}
+
+.space {
+  height: 1rem;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  border-radius: 5px;
+  height: 5rem;
+}
+
+.text-box {
+  grid-column: 2 / span 10;
+  border: 1px solid rgb(213, 213, 213);
+  border-radius: 5px;
+  padding: 1rem;
 }
