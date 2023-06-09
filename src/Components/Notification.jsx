@@ -12,7 +12,13 @@ const Notification = (props) => {
   };
 
   return (
-    <div onClick={handleStyle} className={`${props.style} ${style}`}>
+    <div
+      onClick={() => {
+        handleStyle();
+        props.handleNumber;
+      }}
+      className={`${props.style} ${style}`}
+    >
       <img alt="" src={props.imgSrc} className="portrait"></img>
       <div className="notify-right-content">
         <h4 className="name">{props.name}</h4>
@@ -27,6 +33,7 @@ const Notification = (props) => {
 };
 
 Notification.propTypes = {
+  handleNumber: PropTypes.func.isRequired,
   style: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   imgSrc: PropTypes.string.isRequired,
