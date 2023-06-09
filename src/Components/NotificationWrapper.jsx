@@ -1,5 +1,6 @@
 import React from "react";
 import Notification from "./Notification";
+import PropTypes from "prop-types";
 import img1 from "../project-assets/images/avatar-mark-webber.webp";
 import img2 from "../project-assets/images/avatar-angela-gray.webp";
 import img3 from "../project-assets/images/avatar-jacob-thompson.webp";
@@ -8,10 +9,12 @@ import img5 from "../project-assets/images/avatar-kimberly-smith.webp";
 import img6 from "../project-assets/images/avatar-nathan-peterson.webp";
 import img7 from "../project-assets/images/avatar-anna-kim.webp";
 
-const NotificationWrapper = () => {
+const NotificationWrapper = ({ style, redStyle }) => {
   return (
     <div className="notify-wrapper">
       <Notification
+        style={style}
+        redStyle={redStyle}
         imgSrc={img1}
         name="Mark Webber"
         text="reacted to your recent post"
@@ -19,6 +22,8 @@ const NotificationWrapper = () => {
         time="1m ago"
       />
       <Notification
+        style={style}
+        redStyle={redStyle}
         imgSrc={img2}
         name="Angela Gray"
         text="followed you"
@@ -26,6 +31,8 @@ const NotificationWrapper = () => {
       />
 
       <Notification
+        style={style}
+        redStyle={redStyle}
         imgSrc={img3}
         name="Jacob Thompson"
         text="has joined your group"
@@ -34,6 +41,8 @@ const NotificationWrapper = () => {
       />
 
       <Notification
+        style={style}
+        redStyle={redStyle}
         imgSrc={img4}
         name="Rizky Hasanuddin"
         text="sent you a private message"
@@ -49,20 +58,25 @@ const NotificationWrapper = () => {
       </div>
       <div className="space"></div>
       <Notification
+        style={style}
+        redStyle={redStyle}
         imgSrc={img5}
         name="Kimberly Smith"
         text="commented on your picture"
-        // boldTextChess="Chess Club"
         time="1 week ago"
       />
       <Notification
+        style={style}
+        redStyle={redStyle}
         imgSrc={img6}
         name="Nathan Peterson"
         text="reacted to your post"
-        boldText="5 end-game strategies to increase your win rate"
+        boldText="5 end-game strategies"
         time="2 weeks ago"
       />
       <Notification
+        style={style}
+        redStyle={redStyle}
         imgSrc={img7}
         name="Anna Kim"
         text="left the group"
@@ -71,6 +85,11 @@ const NotificationWrapper = () => {
       />
     </div>
   );
+};
+
+NotificationWrapper.propTypes = {
+  style: PropTypes.string.isRequired,
+  redStyle: PropTypes.string.isRequired,
 };
 
 export default NotificationWrapper;
