@@ -102,7 +102,7 @@ body {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
   border-radius: 10px;
   height: 4.5rem;
   align-items: center;
@@ -221,6 +221,17 @@ body {
   .notification {
     grid-template-columns: 10% repeat(9, 1fr);
   }
+  .notification-click {
+    grid-template-columns: 10% repeat(9, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    height: 4.5rem;
+    align-items: center;
+    justify-items: lefts; */
+  }
 }
 @media screen and (max-width: 678px) {
   html {
@@ -259,6 +270,11 @@ body {
     grid-template-columns: 15% repeat(9, 1fr);
     grid-template-rows: 10% repeat(2, 1fr) 10%;
   }
+  .notification-click {
+    height: 10rem;
+    grid-template-columns: 15% repeat(9, 1fr);
+    grid-template-rows: 10% repeat(2, 1fr) 10%;
+  }
   .box {
     height: 7rem;
   }
@@ -281,6 +297,9 @@ body {
 }
 @media screen and (max-width: 320px) {
   .notification {
+    grid-template-columns: 17% repeat(9, 1fr);
+  }
+  .notification-click {
     grid-template-columns: 17% repeat(9, 1fr);
   }
 }

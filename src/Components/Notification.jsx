@@ -10,6 +10,7 @@ const Notification = (props) => {
     setStyle("notification-click");
     setRedStyle("red-circle-remove");
   };
+
   return (
     <div onClick={handleStyle} className={`${props.style} ${style}`}>
       <img alt="" src={props.imgSrc} className="portrait"></img>
