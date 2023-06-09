@@ -15,7 +15,7 @@ const Notification = (props) => {
     <div
       onClick={() => {
         handleStyle();
-        props.handleNumber;
+        props.handleNumber();
       }}
       className={`${props.style} ${style}`}
     >

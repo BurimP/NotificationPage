@@ -9,8 +9,10 @@ const Container = () => {
   const [number, setNumber] = useState(7);
 
   const handleNumber = () => {
-    setNumber(number - 1);
-    console.log(number);
+    if (number > 0) {
+      setNumber((prevNumber) => prevNumber - 1);
+      console.log(number);
+    }
   };
 
   const handleStyle = () => {

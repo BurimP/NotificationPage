@@ -1,13 +1,20 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 const Headline = ({ changeStyle, subNumber }) => {
   const [number, setNumber] = useState(subNumber);
 
+  useEffect(() => {
+    setNumber(subNumber);
+  }, [subNumber]);
+
   const handleNumber = () => {
-    setNumber("0");
+    setNumber(0);
   };
+
+  console.log("number:", number);
+  console.log("subNumber:", subNumber);
 
   return (
     <div className="headline">
