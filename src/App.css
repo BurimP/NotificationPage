@@ -243,7 +243,8 @@ body {
     width: 90%;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
+  /* 375px */
   html {
     font-size: 7px;
   }
@@ -271,6 +272,9 @@ body {
 }
 
 @media screen and (max-width: 335px) {
+  html {
+    font-size: 6px;
+  }
   .notification {
     grid-template-columns: 16% repeat(9, 1fr);
   }
