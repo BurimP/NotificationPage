@@ -46,6 +46,7 @@ body {
 
 .title {
   font-family: "Plus Jakarta Sans", sans-serif;
+  color: black;
 }
 
 .headline-right-content {
@@ -121,6 +122,10 @@ body {
   display: flex;
   gap: 0.5rem;
   margin-top: 0.9rem;
+}
+
+.name {
+  color: black;
 }
 
 .name:hover {
